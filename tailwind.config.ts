@@ -1,3 +1,4 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -8,12 +9,20 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      backgroundImage: {
+        "main-bg": "url('/bg-img.jpeg')"
+      },
+       fontFamily: {
+        bodyFont: ["Fira Sans Condensed", ...defaultTheme.fontFamily.sans]
+       },
+       colors: {
+        bodyColor: "#fbfaf7",
+        bgLight: "#1010100d",
+        darkText: "#242424",
+        lightText: "#a5a5a5",
+       }
       },
     },
-  },
   plugins: [],
 };
 export default config;
