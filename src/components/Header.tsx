@@ -11,9 +11,9 @@ const Header = () => {
       <Container className='h-full flex items-center md:gap-x-5 justify-between md:justify-start'>
          {/* Location Field */}
 
-          <div className='flex items-center justify-center gap-2 p-2 border-r-[1px] h-[50px]'>
+          <div className='flex items-center justify-center gap-2 p-2 border-r-[1px] h-[50px] cursor-pointer hover:text-blue-600'>
           <IoLocationOutline className='text-xl' />
-          <p className='text-xl font-extrabold'>Location</p>
+          <p className='text-xl font-bold'>Location</p>
           </div>
          {/* Search Field */}
           <div className='w-full bg-white hidden md:flex items-center 
@@ -27,7 +27,7 @@ const Header = () => {
           </div>
 
            {/* Help line */}
-         <div className='flex items-center justify-center mr-10 gap-2 p-2 border-l-[1px] h-[50px] w-[50%]'>
+         <div className='flex items-center justify-center mr-10 gap-2 p-2 border-l-[1px] h-[50px] w-[70%] hover:text-blue-600'>
            <LuPhone />
            <p className='flex items-center space-x-2'> 
             <span>+2347080606000</span> 
@@ -37,7 +37,7 @@ const Header = () => {
          </div>
 
          {/* Contact button */}
-         <div className='flex items-center justify-center mr-10 gap-2 p-2 border-l-[1px] h-[50px] w-[32%]'>
+         <div className='flex items-center justify-center mr-10 gap-2 p-2 border-l-[1px] h-[50px] w-[32%] cursor-pointer hover:text-blue-600'>
            <FaRegEnvelope />
            <p className='font-semibold flex flex-row items-center gap-2 p-2'>Contact us</p>
          </div>
